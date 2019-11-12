@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>checkIn</title>
-</head>
+<style>
+
+body{
+	background-color: #787878;
+}
+
+h3{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: white;
+  color: #787878;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #787878;
+  color:white;
+}
+
+div {
+  border-radius: 20px;
+  background-color: lightgray;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: gray;
+  font-size: 18px;
+}
+
+a{
+	color: #6a5acd;
+}
+/* mouse over link */
+a:hover {
+	color:#787878;
+</style>
 <body>
-	<h1>LOGIN</h1>
-	<form action="<?php echo base_url();?>index.php/login/aksi_login" method="post">		
-		<table>
-			<tr>
-				<td>Username</td>
-				<td><input type="text" name="username"></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" value="Login"></td>
-			</tr>
-		</table>
-	</form>
+
+<h3><b>CheckIn</b></h3>
+
+<div>
+	<form action="<?php echo base_url();?>index.php/login/aksi_login" method="post">
+
+    <label for="fname">Username</label>
+    <input type="text" id="fname" name="username" placeholder="username">
+
+    <label for="lname">Password</label>
+    <input type="text" id="lname" name="password" placeholder="password">
+
+    <input type="submit" value="LOGIN">
+    <p><a href="default.asp" target="_blank">Forget password?</a></p>
+  </form>
+</div>
 
 </body>
 </html>
+
