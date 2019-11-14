@@ -3,13 +3,13 @@
 <style>
 
 body{
-	background-color: #787878;
+	background-color: #3E5C76;
 }
 
 h3{
 	text-align: center;
 	font-size: 40px;
-	color: white;
+	color: #F0EBD8;
 }
 
 input, select {
@@ -25,22 +25,22 @@ input, select {
 input[type=submit] {
   width: 100%;
   background-color: white;
-  color: #787878;
+  color: #0D1321;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 20px;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #787878;
+  background-color: #0D1321;
   color:white;
 }
 
 div {
   border-radius: 20px;
-  background-color: lightgray;
+  background-color:#F0EBD8;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
