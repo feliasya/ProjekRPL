@@ -12,7 +12,7 @@ h3{
 	color: white;
 }
 
-input[type=text], select {
+input, select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -57,6 +57,7 @@ a{
 /* mouse over link */
 a:hover {
 	color:#787878;
+}
 </style>
 <body>
 
@@ -69,10 +70,11 @@ a:hover {
     <input type="text" id="fname" name="username" placeholder="username">
 
     <label for="lname">Password</label>
-    <input type="text" id="lname" name="password" placeholder="password">
-
+    <input type="password" id="lname" name="password" placeholder="password">
+    <span><?php echo $this->session->userdata('message'); ?></span>
     <input type="submit" value="LOGIN">
     <p><a href="default.asp" target="_blank">Forget password?</a></p>
+    <p><a href="default.asp" target="_blank">Create new account</a></p>
   </form>
 </div>
 
