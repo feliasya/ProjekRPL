@@ -74,7 +74,7 @@ a:hover {
     <span><?php echo $this->session->userdata('message'); ?></span>
     <input type="submit" value="LOGIN">
     <p><a href="default.asp" target="_blank">Forget password?</a></p>
-    <p><a href="default.asp" target="_blank">Create new account</a></p>
+    <p><a href="<?php echo base_url();?>index.php/createAccount">Create new account</a></p>
   </form>
 </div>
 
