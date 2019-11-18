@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2019 at 12:05 AM
+-- Generation Time: Nov 18, 2019 at 03:04 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -30,16 +30,24 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `data_akun` (
   `id` int(15) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `password` varchar(16) NOT NULL,
-  `user_nama` varchar(60) NOT NULL,
-  `nomor_hp` int(18) NOT NULL,
-  `email` int(50) NOT NULL,
-  `user_fakultas` int(30) NOT NULL,
-  `user_jurusan` int(30) NOT NULL,
-  `npm` int(16) NOT NULL,
-  `angkatan` int(5) NOT NULL
+  `username` varchar(20) DEFAULT NULL,
+  `password` varchar(16) DEFAULT NULL,
+  `user_nama` varchar(60) DEFAULT NULL,
+  `nomor_hp` varchar(18) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `user_fakultas` varchar(30) DEFAULT NULL,
+  `user_jurusan` varchar(30) DEFAULT NULL,
+  `npm` varchar(16) DEFAULT NULL,
+  `angkatan` varchar(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `data_akun`
+--
+
+INSERT INTO `data_akun` (`id`, `username`, `password`, `user_nama`, `nomor_hp`, `email`, `user_fakultas`, `user_jurusan`, `npm`, `angkatan`) VALUES
+(1, 'admin', 'admin', 'administrator', '0', '0', '0', '0', '0', '0'),
+(12, 'muflih23', '4F1R250286', 'Fadli', '081283029409', 'mfadli.muflih23@gmail.com', 'FMIPA', 'Teknik Informatika', '140810170006', '2017');
 
 -- --------------------------------------------------------
 
@@ -101,7 +109,7 @@ ALTER TABLE `data_ruangan`
 -- AUTO_INCREMENT for table `data_akun`
 --
 ALTER TABLE `data_akun`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `data_master`
