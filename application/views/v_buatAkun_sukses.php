@@ -12,6 +12,10 @@ body{
 .header {
   background-color: #F0EBD8;
   padding: 20px;
+  font-family: calibri;
+  font-style: bold;
+  text-align: center;
+  font-size: 40px;
   color: #3E5C76;
 }
 

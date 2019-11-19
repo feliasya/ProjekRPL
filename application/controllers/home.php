@@ -7,11 +7,6 @@ class Admin extends CI_Controller{
 	}
 
 	function index(){
-		$this->load->view('v_admin');
-	}
-
-	function tampil_nama_user(){
-		$getterNama = $this->session->userdata('nama');
-
+		$this->load->view('v_home');
 	}
 }

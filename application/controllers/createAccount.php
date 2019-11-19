@@ -33,17 +33,11 @@ class CreateAccount extends CI_Controller{
 			'username' => $inputUsername,
 			'password' => $inputPassword
 		);
-		if($data==NULL){
-			$this->session->set_flashdata('message','Field tidak boleh kosong!');
-			 redirect('createAccount');
-		}
-		else{
-			$this->m_createAccount->input_akunBaru($data,'data_akun');
-			 redirect('buatAkun_sukses');
+		$this->m_createAccount->input_akunBaru($data,'data_akun');
+		redirect('buatAkun_sukses');
 		}
 	}
 
 	function cancel(){
 		redirect('login');
 	}
-}

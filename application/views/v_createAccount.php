@@ -17,6 +17,10 @@ body{
 .header {
   background-color: #F0EBD8;
   padding: 20px;
+  font-family: calibri;
+  font-style: bold;
+  text-align: center;
+  font-size: 40px;
   color: #3E5C76;
 }
 
@@ -107,12 +111,9 @@ input[type=submit]:hover {
 
         <label for="langkatan">Batch*</label>
         <input type="text" id="langkatan" name="inputAngkatan" placeholder="Batch" required="required">
-    </form>
 </div>
 
 <div class="column right">
-    <form>
-
         <p><h5>Use 16 unique character that easy to remember for your username</h5></p>
         <hr>
         <label for="uname">Username*</label>
