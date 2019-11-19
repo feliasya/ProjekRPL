@@ -15,7 +15,7 @@ body{
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #F0EBD8;
   padding: 20px;
   color: #3E5C76;
 }

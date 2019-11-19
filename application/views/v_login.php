@@ -4,12 +4,13 @@
 
 body{
 	background-color: #3E5C76;
+  margin:0px;
 }
 
-h3{
-	text-align: center;
-	font-size: 40px;
-	color: #F0EBD8;
+.header {
+  background-color: #F0EBD8;
+  padding: 20px;
+  color: #3E5C76;
 }
 
 input, select {
@@ -38,13 +39,14 @@ input[type=submit]:hover {
   color:white;
 }
 
-div {
+div.content {
   border-radius: 10px;
   background-color:#F0EBD8;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 50px;
   margin-left: 400px;
   margin-right: 400px;
   color: #3E5C76;
@@ -61,9 +63,9 @@ a:hover {
 </style>
 <body>
 
-<h3><b>CheckIn</b></h3>
+<div class="header">CheckIn</div>
 
-<div>
+<div class="content">
 	<form action="<?php echo base_url();?>index.php/login/aksi_login" method="post">
 
     <label for="fname">Username</label>
