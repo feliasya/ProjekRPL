@@ -39,7 +39,7 @@ input[type=submit]:hover {
 }
 
 div {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color:#F0EBD8;
   padding-left: 100px;
   padding-right: 100px;
@@ -47,7 +47,7 @@ div {
   padding-bottom: 50px;
   margin-left: 400px;
   margin-right: 400px;
-  color: gray;
+  color: #3E5C76;
   font-size: 18px;
 }
 
