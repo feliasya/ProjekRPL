@@ -38,11 +38,12 @@ input, select {
 }
 
 .row {
+  background-color: #3E5C76;
   border-radius: 10px;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 5px;
-  color: #F0EBD8;
+  color: #3E5C76;
   font-size: 18px;
 }
 
