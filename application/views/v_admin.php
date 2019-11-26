@@ -113,28 +113,34 @@ img{
 	height:200px;
 	color:white;
 }
+
 </style>
 </head>
 <body>
 	<div class="row">
-	<div class="column left">CheckIn</div>
-	<div class="column middle">Help</div>
-	<div class="column right">Log Out</div>
-	</div>
-	<h2>Hai, <?php echo $this->session->userdata("nama"); ?></h2>
-
-	<div class="row1">
-	<div class="column1 left">
-	<img src="https://pngimage.net/wp-content/uploads/2018/06/list-vector-png.png"></div>
-	<div class="column1 right">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/icon-list-png-9.png"></div>
+	  <div class="column left">
+        <img src="\ProjekRPL\CheckIn.png" style="width: 50px; height: 50px;"> 
+    </div>
+	  <div class="column middle" style="padding-bottom: 53px" >Help</div>
+	  <div class="column right">
+        <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
+    </div>
 	</div>
 
+	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></h1>
+
 	<div class="row1">
-	<div class="column1 left">
-    <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
+	  <div class="column1 left">
+	      <img src="https://pngimage.net/wp-content/uploads/2018/06/list-vector-png.png"></div>
+	  <div class="column1 right">
+        <img src="https://pngimage.net/wp-content/uploads/2018/06/icon-list-png-9.png"></div>
+	</div>
+
+	<div class="row1">
+	  <div class="column1 left">
+        <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
     <div class="column1 right">
-    <input type="ptempat" value="PINJAM TEMPAT"></div>
+        <input type="ptempat" value="PINJAM TEMPAT"></div>
 	</div>
 
 	<a href="<?php echo base_url();?>index.php/login/logout">Logout(jadiin logo aja, pake logo "turn off")</a>

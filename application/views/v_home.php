@@ -6,7 +6,7 @@
 <body>
 	<h1>Login berhasil !</h1>
 	<?php echo base_url() ?>
-	<h2>Hai, <?php echo $this->session->userdata("nama"); ?></h2>
+	<h2>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></h2>
 	<a href="<?php echo base_url();?>index.php/login/logout">Logout</a>
 </body>
 </html>
