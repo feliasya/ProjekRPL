@@ -67,7 +67,8 @@ a:hover {
 </style>
 <body>
 
-<div class="header">CheckIn</div>
+<div class="header">
+  <img src="\ProjekRPL\CheckIn.png" style="width: 100px; height: 100px;"><br>Check-IN</div>
 
 <div class="content">
 	<form action="<?php echo base_url();?>index.php/login/aksi_login" method="post">

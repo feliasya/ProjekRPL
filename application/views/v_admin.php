@@ -14,6 +14,15 @@ body{
     margin: 0px;
 }
 
+.header {
+  background-color: #F0EBD8;
+  font-family: calibri;
+  font-style: bold;
+  text-align: center;
+  font-size: 20px;
+  color: #3E5C76;
+}
+
 .row {
   border-radius: 10px;
   margin:0px;
@@ -126,8 +135,8 @@ img{
         <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
     </div>
 	</div>
-
-	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></h1>
+  <div class="header">
+	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></div>
 
 	<div class="row1">
 	  <div class="column1 left">
