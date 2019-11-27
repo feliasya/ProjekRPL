@@ -45,6 +45,7 @@ body{
 
 .column.right {
   width: 20%;
+  background-color: #F0EBD8;
 }
 
 input[type=tempat] {
@@ -123,14 +124,17 @@ img{
     </div>
 	  <div class="column middle" style="padding-bottom: 53px" >Help</div>
 	  <div class="column right">
-        <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
-    </div>
-	</div>
+        <a href="<?php echo base_url();?>index.php/login/logout">
+          <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
+        </a>
+      </div>
+	  </div>
 
 	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></h1>
 
 	<div class="row1">
 	  <div class="column1 left">
+        <a href="<?php echo base_url();?>index.php/pinjam">
 	      <img src="https://pngimage.net/wp-content/uploads/2018/06/list-vector-png.png"></div>
 	  <div class="column1 right">
         <img src="https://pngimage.net/wp-content/uploads/2018/06/icon-list-png-9.png"></div>
@@ -140,9 +144,9 @@ img{
 	  <div class="column1 left">
         <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
     <div class="column1 right">
-        <input type="ptempat" value="PINJAM TEMPAT"></div>
+        <input type="ptempat" value="PINJAM TEMPAT" href="<?php echo base_url();?>index.php/pinjam">
+        <!--<a href="<?php echo base_url();?>index.php/pinjam">-->
+      </div>
 	</div>
-
-	<a href="<?php echo base_url();?>index.php/login/logout">Logout(jadiin logo aja, pake logo "turn off")</a>
 </body>
 </html>
