@@ -103,12 +103,20 @@ input[type=ptempat]:hover {
 /* Left and right column */
 .column1.left {
   width: 20%;
-  font-family: calibri;
+  font-family: roboto;
   font-size: 20px;
 }
 
 .column1.right {
   width: 50%;
+}
+.header {
+  background-color: #3E5C76;
+  font-family: roboto;
+  font-style: bold;
+  text-align: center;
+  font-size: 20px;
+  color: white;
 }
 
 img{
@@ -121,34 +129,26 @@ img{
 </head>
 <body>
 	<div class="row">
-	  <div class="column.left">
-        <img src="\ProjekRPL\CheckIn.png" style="width: 50px; height: 50px;"> 
-    
-    <div class="column.middle">
-        <h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?>
+	  <div>
+        <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
+     <div>
+        <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
+     </div>
+    <div class="header">
+        <h1>Selamat Datang di Check-IN, <?php echo $this->session->userdata("nama"); ?>
     </div>
 	  
-    <div class="column.left" style="padding-bottom: 53px" >Help</div>
-	  
-    <div>
-        <img src="\ProjekRPL\logout-sign.png" class=".column1.left" style="width: 50px; height: 50px;">
-    </div>
+    <div style="padding-bottom: 53px" align="right">Help</div> 
 	</div>
 
-
 	<div>
-	  <div class="column1">
+	  <div class="column1 right">
 	      <img src="\ProjekRPL\1.png">
     </div>
 
 	  <div class="column1 right">
         <img src="\ProjekRPL\2.png">
     </div>
-	</div>
-
-	<div>
-
-
 	</div>
 
 	<a href="<?php echo base_url();?>index.php/login/logout">Logout(jadiin logo aja, pake logo "turn off")</a>

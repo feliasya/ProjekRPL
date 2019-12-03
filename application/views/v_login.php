@@ -8,13 +8,13 @@ body{
 }
 
 .header {
-  background-color: #F0EBD8;
-  padding: 20px;
-  font-family: calibri;
+  background-color: #3E5C76;
+  padding: 30px;
+  font-family: roboto;
   font-style: bold;
   text-align: center;
   font-size: 40px;
-  color: #3E5C76;
+  color: white;
 }
 
 input, select {
@@ -50,7 +50,7 @@ div.content {
   padding-right: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 400px;
   margin-right: 400px;
   color: #3E5C76;
