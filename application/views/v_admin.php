@@ -14,14 +14,6 @@ body{
     margin: 0px;
 }
 
-.header {
-  background-color: #F0EBD8;
-  font-family: calibri;
-  font-style: bold;
-  text-align: center;
-  font-size: 20px;
-  color: #3E5C76;
-}
 
 .row {
   border-radius: 10px;
@@ -44,7 +36,7 @@ body{
 /* Left and right column */
 .column.left {
   width: 60%;
-  padding-right:700px;
+  padding-right:100px;
 }
 
 /* Middle column */
@@ -110,7 +102,9 @@ input[type=ptempat]:hover {
 
 /* Left and right column */
 .column1.left {
-  width: 50%;
+  width: 20%;
+  font-family: calibri;
+  font-size: 20px;
 }
 
 .column1.right {
@@ -118,8 +112,8 @@ input[type=ptempat]:hover {
 }
 
 img{
-	width:200px;
-	height:200px;
+	width:300px;
+	height:300px;
 	color:white;
 }
 
@@ -127,29 +121,34 @@ img{
 </head>
 <body>
 	<div class="row">
-	  <div class="column left">
+	  <div class="column.left">
         <img src="\ProjekRPL\CheckIn.png" style="width: 50px; height: 50px;"> 
+    
+    <div class="column.middle">
+        <h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?>
     </div>
-	  <div class="column middle" style="padding-bottom: 53px" >Help</div>
-	  <div class="column right">
-        <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
+	  
+    <div class="column.left" style="padding-bottom: 53px" >Help</div>
+	  
+    <div>
+        <img src="\ProjekRPL\logout-sign.png" class=".column1.left" style="width: 50px; height: 50px;">
     </div>
 	</div>
-  <div class="header">
-	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></div>
 
-	<div class="row1">
-	  <div class="column1 left">
-	      <img src="https://pngimage.net/wp-content/uploads/2018/06/list-vector-png.png"></div>
+
+	<div>
+	  <div class="column1">
+	      <img src="\ProjekRPL\1.png">
+    </div>
+
 	  <div class="column1 right">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/icon-list-png-9.png"></div>
+        <img src="\ProjekRPL\2.png">
+    </div>
 	</div>
 
-	<div class="row1">
-	  <div class="column1 left">
-        <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
-    <div class="column1 right">
-        <input type="ptempat" value="PINJAM TEMPAT"></div>
+	<div>
+
+
 	</div>
 
 	<a href="<?php echo base_url();?>index.php/login/logout">Logout(jadiin logo aja, pake logo "turn off")</a>
