@@ -14,10 +14,7 @@ body{
     margin: 0px;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e5ff1a8663dd8a5c1a4209f1542c398b727940f2
 .row {
   border-radius: 10px;
   margin:0px;
@@ -64,10 +61,7 @@ input[type=tempat] {
   text-align: center;
 }
 
-input[type=tempat]:hover {
-  background-color: #0D1321;
-  color:white;
-}
+
 
 input[type=ptempat] {
   width: 50%;
@@ -79,11 +73,6 @@ input[type=ptempat] {
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
-}
-
-input[type=ptempat]:hover {
-  background-color: #0D1321;
-  color:white;
 }
 
 .row1 {
@@ -133,8 +122,9 @@ img{
 </head>
 <body>
 	<div class="row">
-<<<<<<< HEAD
+
 	  <div>
+        <a href="<?php echo base_url();?>index.php/login/logout">
         <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
      <div>
         <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
@@ -147,34 +137,18 @@ img{
 	</div>
 
 	<div>
-=======
-	  <div class="column left">
-        <img src="\ProjekRPL\CheckIn.png" style="width: 50px; height: 50px;"> 
-    </div>
-	  <div class="column middle" style="padding-bottom: 53px" >Help</div>
-	  <div class="column right">
-        <a href="<?php echo base_url();?>index.php/login/logout">
-          <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px;">
-        </a>
-      </div>
-	  </div>
-
-	<h1>Selamat Datang, <?php echo $this->session->userdata("nama"); ?></h1>
-
-	<div class="row1">
-	  <div class="column1 left">
-        <a href="<?php echo base_url();?>index.php/pinjam">
-	      <img src="https://pngimage.net/wp-content/uploads/2018/06/list-vector-png.png"></div>
->>>>>>> e5ff1a8663dd8a5c1a4209f1542c398b727940f2
+	  
 	  <div class="column1 right">
+        <a href="<?php echo base_url();?>index.php/pinjam">
 	      <img src="\ProjekRPL\1.png">
     </div>
 
-<<<<<<< HEAD
+
 	  <div class="column1 right">
+
         <img src="\ProjekRPL\2.png">
     </div>
-=======
+
 	<div class="row1">
 	  <div class="column1 left">
         <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
@@ -182,7 +156,7 @@ img{
         <input type="ptempat" value="PINJAM TEMPAT" href="<?php echo base_url();?>index.php/pinjam">
         <!--<a href="<?php echo base_url();?>index.php/pinjam">-->
       </div>
->>>>>>> e5ff1a8663dd8a5c1a4209f1542c398b727940f2
+
 	</div>
 </body>
 </html>

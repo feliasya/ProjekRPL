@@ -6,6 +6,11 @@
 <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css">  
 </head>
 <style type="text/css">
+* {
+  box-sizing: border-box;
+  background-color:#3E5C76;
+  color: #F0EBD8;
+}
 
 
 
