@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2019 at 03:04 AM
--- Server version: 10.4.8-MariaDB
--- PHP Version: 7.3.11
+-- Generation Time: Dec 10, 2019 at 07:22 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.0.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -69,6 +69,24 @@ CREATE TABLE `data_master` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `data_pinjam`
+--
+
+CREATE TABLE `data_pinjam` (
+  `peminjam` varchar(200) NOT NULL,
+  `npm` varchar(200) NOT NULL,
+  `fakultas` varchar(200) NOT NULL,
+  `jurusan` varchar(200) NOT NULL,
+  `instansi` varchar(200) NOT NULL,
+  `kode_ruang` varchar(200) NOT NULL,
+  `acara` varchar(200) NOT NULL,
+  `waktu_mulai` time NOT NULL,
+  `waktu_selesai` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `data_ruangan`
 --
 
@@ -94,6 +112,12 @@ ALTER TABLE `data_akun`
 --
 ALTER TABLE `data_master`
   ADD PRIMARY KEY (`master_id`);
+
+--
+-- Indexes for table `data_pinjam`
+--
+ALTER TABLE `data_pinjam`
+  ADD PRIMARY KEY (`npm`);
 
 --
 -- Indexes for table `data_ruangan`
