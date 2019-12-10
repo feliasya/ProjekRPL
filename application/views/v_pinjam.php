@@ -11,9 +11,6 @@
   background-color:#3E5C76;
   color: #F0EBD8;
 }
-
-
-
 input[type=submit] {
   width: 100%;
   background-color: white;
@@ -24,7 +21,6 @@ input[type=submit] {
   border-radius: 20px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: #0D1321;
   color:white;
@@ -33,21 +29,15 @@ input[type=submit]:hover {
 </head>
 
 <body>
-<div class="row">
-
-      <div>
-        <a href="<?php echo base_url();?>index.php/login/logout">
         <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
      <div>
+        <a href="<?php echo base_url();?>index.php/admin/logout"> 
         <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
+        </a>
      </div>
-    <div class="header">
+<div class="header">
         <h1>Selamat Datang di Check-IN, <?php echo $this->session->userdata("nama"); ?>
-    </div>
-      
-    </div>
-
-<div class="header">CheckIn</div>
+</div>
 <form action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">
     <div class="transparent box">
     <div class="upperForm">
@@ -162,18 +152,14 @@ input[type=submit]:hover {
 
  <script type="text/javascript">
   $(document).ready(function(){
-
     $('#dtp').datetimepicker({
      format : 'DD/MM/YYYY'
     });
-
     $('#dtp_icon').datetimepicker({
      format : 'DD/MM/YYYY'
     });
-
     $('#dtp_jam').datetimepicker({
      format : 'HH:mm'
     });
-
   });
  </script>
