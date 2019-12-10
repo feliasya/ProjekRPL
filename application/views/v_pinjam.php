@@ -107,7 +107,7 @@ div.content{
             <label for="pInstansi">Instansi</label>
             <input type="text" id="pInstansi" name="Instansi_Peminjam" placeholder="Instansi" required="required">
 
-            <label for="pTempat">Kode Ruang</label>
+            <label for="pTempat">Kode Tempat</label>
             <input type="text" id="pTempat" name="Tempat_Pinjam" placeholder="Kode Ruang Peminjaman" required="required">
 
             <label for="pAcara">Acara</label>
