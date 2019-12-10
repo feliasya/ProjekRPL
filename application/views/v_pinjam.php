@@ -29,11 +29,23 @@ input[type=submit]:hover {
   background-color: #0D1321;
   color:white;
 }
-
 </style>
 </head>
 
 <body>
+<div class="row">
+
+      <div>
+        <a href="<?php echo base_url();?>index.php/login/logout">
+        <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
+     <div>
+        <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
+     </div>
+    <div class="header">
+        <h1>Selamat Datang di Check-IN, <?php echo $this->session->userdata("nama"); ?>
+    </div>
+      
+    </div>
 
 <div class="header">CheckIn</div>
 <form action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">

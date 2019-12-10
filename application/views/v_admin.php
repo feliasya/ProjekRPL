@@ -133,7 +133,6 @@ img{
         <h1>Selamat Datang di Check-IN, <?php echo $this->session->userdata("nama"); ?>
     </div>
 	  
-    <div style="padding-bottom: 53px" align="right">Help</div> 
 	</div>
 
 	<div>
@@ -144,13 +143,13 @@ img{
     </div>
 
 
-	  <div class="column1 right">
+	  <div class="column1">
 
         <img src="\ProjekRPL\2.png">
     </div>
 
 	<div class="row1">
-	  <div class="column1 left">
+	  <div class="column1 right">
         <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
     <div class="column1 right">
         <input type="ptempat" value="PINJAM TEMPAT" href="<?php echo base_url();?>index.php/pinjam">
