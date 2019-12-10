@@ -142,7 +142,9 @@ img{
 
 	  <div class = "middleRow">
         <li>
-	        <img src="\ProjekRPL\1.png">
+          <a href="<?php echo base_url();?>index.php/sudahdipinjam">
+	         <img src="\ProjekRPL\1.png">
+          </a>
         </li>
         <li>
           <div class="blankSpace"></div>
