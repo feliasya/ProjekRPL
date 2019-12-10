@@ -13,17 +13,6 @@
   color: #F0EBD8;
 }
 
-input,select{
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 20px;
-	box-sizing: border-box;
-	background-color:white;
-}
-
 .upperRow{
     padding: 50px;
 }
@@ -44,6 +33,7 @@ input,select{
   border-radius: 20px;
   box-sizing: border-box;
   background-color:white;
+  color: grey;
 }
 
 input[type=submit] {
@@ -104,6 +94,8 @@ div.content{
             <option value="Fakultas Kedokteran">FK</option>
             <option value="Fakultas Ilmu Budaya">FIB</option>
             </select>
+            <select name="Jurusan_Peminjam">
+            <option value="">Pilih Jurusan</option>
 
             <label for="pInstansi">Instansi</label>
             <input type="text" id="pInstansi" name="Instansi_Peminjam" placeholder="Instansi" required="required">
