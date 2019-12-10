@@ -45,30 +45,8 @@ input[type=submit]:hover {
      </div>
 <div class="header">
         <h1>Tempat Sudah Dipinjam</h1>
+        <form name="Dipinjam" action="<?php echo base_url();?>index.php/pinjam/sudahdipinjam"></form>
 </div>
-<table style="width:100%">
-  <tr>
-    <td>No</td>
-    <th>Nama Peminjam</th>
-    <th>Kode Tempat</th>
-    <th>Tanggal</th>
-    <th>Waktu</th>
-  </tr>
-  <tr>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>5</td>
-  </tr>
-</table>
+
 </body>
 </html>

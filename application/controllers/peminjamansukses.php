@@ -1,9 +1,9 @@
 <?php 
 
-class Dipinjam extends CI_Controller{
+class Peminjamansukses extends CI_Controller{
 
 	function index(){
-		$this->load->view('v_dipinjamuser.php');
+		$this->load->view('v_peminjamansukses.php');
 	}
 
 	function logout(){

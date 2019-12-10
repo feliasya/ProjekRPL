@@ -87,7 +87,7 @@ div.content{
         <h1>Pinjam Tempat</h1>
 </div>
 <div class="content">
-    <form name="peminjaman" action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">
+    <form name="peminjaman" action="<?php echo base_url();?>index.php/pinjam/index" method="get">
 
             <hr>
             <label for="pnama">Nama Peminjam</label>
@@ -122,10 +122,10 @@ div.content{
             <input type="text" id="pAcara" name="Acara" placeholder="Acara" required="required">
 
             <label for="pWmulai">Waktu Mulai</label>
-            <input type="text" id="pWmulai" name="Acara" placeholder="Waktu Mulai Peminjaman" required="required">
+            <input type="time" id="pWmulai" name="pWmulai" placeholder="Waktu Mulai Peminjaman" required="required">
 
             <label for="pWSelesai">Waktu Selesai</label>
-            <input type="text" id="pWSelesai" name="Acara" placeholder="Waktu Selesai Peminjaman" required="required">
+            <input type="time" id="pWSelesai" name="pWSelesai" placeholder="Waktu Selesai Peminjaman" required="required">
 
             <input type="submit" value="PINJAM">
     </form>

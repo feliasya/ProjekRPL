@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2019 at 07:22 PM
+-- Generation Time: Dec 10, 2019 at 08:55 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.0.27
 
@@ -80,9 +80,19 @@ CREATE TABLE `data_pinjam` (
   `instansi` varchar(200) NOT NULL,
   `kode_ruang` varchar(200) NOT NULL,
   `acara` varchar(200) NOT NULL,
-  `waktu_mulai` time NOT NULL,
-  `waktu_selesai` time NOT NULL
+  `waktu_mulai` varchar(200) DEFAULT NULL,
+  `waktu_selesai` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `data_pinjam`
+--
+
+INSERT INTO `data_pinjam` (`peminjam`, `npm`, `fakultas`, `jurusan`, `instansi`, `kode_ruang`, `acara`, `waktu_mulai`, `waktu_selesai`) VALUES
+('felia', '1111', 'Fakultas Matematika dan Ilmu Pengetahuan Alam', '', 'unpad', '018', 'ultah', NULL, NULL),
+('felia', '2222', 'Fakultas Matematika dan Ilmu Pengetahuan Alam', '', 'unpad', '018', 'ultah', NULL, NULL),
+('felia', '5555', 'Fakultas Matematika dan Ilmu Pengetahuan Alam', '', 'unpad', '018', 'ultah', NULL, NULL),
+('felia', '7777', 'Fakultas Matematika dan Ilmu Pengetahuan Alam', '', 'unpad', '018', 'ultah', NULL, NULL);
 
 -- --------------------------------------------------------
 

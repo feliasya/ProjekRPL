@@ -30,11 +30,11 @@ class Pinjam extends CI_Controller{
 			'instansi' => $instansi,
 			'kode_ruang' => $tempat,
 			'acara' => $nama_acara,
-			'waktu_mulai' => $tanggal_mulai,
-			'waktu_selesai' => $tanggal_selesai,
+			'waktu_mulai' => $jam_mulai,
+			'waktu_selesai' => $jam_selesai,
 		);
 		$this->m_pinjam->input_peminjaman($data,'data_pinjam');
-		redirect('peminjaman_sukses');
+		redirect('peminjamansukses');
 		}
 
 	function logout(){
