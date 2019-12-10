@@ -19,6 +19,8 @@ class Pinjam extends CI_Controller{
 		$instansi = $this->input->get('Instansi_Peminjam');
 		$tempat = $this->input->get('Tempat_Pinjam');
 		$nama_acara = $this->input->get('Acara');
+		$tanggal_mulai = $this->input->get('tanggal_mulai');
+		$tanggal_selesai = $this->input->get('tanggal_selesai');
 		$jam_mulai = $this->input->get('jam_mulai');
 		$jam_selesai = $this->input->get('jam_selesai');
 
@@ -30,6 +32,8 @@ class Pinjam extends CI_Controller{
 			'instansi' => $instansi,
 			'kode_ruang' => $tempat,
 			'acara' => $nama_acara,
+			'tanggal_mulai' => $tanggal_mulai,
+			'tanggal_selesai' => $tanggal_selesai,
 			'waktu_mulai' => $jam_mulai,
 			'waktu_selesai' => $jam_selesai,
 		);

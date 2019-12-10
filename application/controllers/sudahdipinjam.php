@@ -7,8 +7,11 @@ class Sudahdipinjam extends CI_Controller{
 		parent::__construct();		
 		$this->load->model('m_showpinjam');
 	}
+
 	function index(){
-		$this->load->view('v_dipinjamuser.php');
+		$data['data_pinjam'] = $this->m_showpinjam->show_peminjaman()->result();
+		$this->load->view('v_dipinjamuser.php', $data);
+
 	}
 
 	function logout(){

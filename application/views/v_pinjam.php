@@ -2,7 +2,6 @@
 <html>
 
 <head>
-<script src="dynamicDropdown.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css">  
 </head>
@@ -87,8 +86,7 @@ div.content{
         <h1>Pinjam Tempat</h1>
 </div>
 <div class="content">
-    <form name="peminjaman" action="<?php echo base_url();?>index.php/pinjam/index" method="get">
-
+    <form action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">
             <hr>
             <label for="pnama">Nama Peminjam</label>
             <input type="text" id="pnama" name="NamaPeminjam" placeholder="Nama Peminjam" required="required">
@@ -97,19 +95,14 @@ div.content{
             <input type="text" id="pnpm" name="NPMPeminjam" placeholder="NPM Peminjam" required="required">
 
             <label for="pfakultas">Fakultas</label>
-            <select name="Fakultas_Peminjam" onChange="SelectCat2();">
+            <select name="Fakultas_Peminjam" id="main_dropdown" class="custom_select">
             <option value="">Pilih Fakultas</option>
-            <option value="Fakultas Matematika dan Ilmu Pengetahuan Alam">FMIPA</option>
-            <option value="Fakultas Hukum">Hukum</option>
-            <option value="Fakultas Perikanan dan Ilmu Kelautan">FPIK</option>
-            <option value="Fakultas Teknik Geologi">FTG</option>
-            <option value="Fakultas Peternakan">FAPET</option>
-            <option value="Fakultas Psikologi">FAPSI</option>
-            <option value="Fakultas Kedokteran">FK</option>
-            <option value="Fakultas Ilmu Budaya">FIB</option>
+            <option value="FMIPA">FMIPA</option>
+            <option value="FIB">FIB</option>
+            <option value="FISIP">FISIP</option>
             </select>
             <label for="pjurusan">Jurusan</label>
-            <select name="Jurusan_Peminjam">
+            <select name="Jurusan_Peminjam" id="sub_dropdown" class="custom_select">
             <option value="">Pilih Jurusan</option>
 
             <label for="pInstansi">Instansi</label>
@@ -121,11 +114,17 @@ div.content{
             <label for="pAcara">Acara</label>
             <input type="text" id="pAcara" name="Acara" placeholder="Acara" required="required">
 
+            <label for="pTanggalM">Tanggal Mulai</label>
+            <input type="date" id="pTanggalM" name="tanggal_mulai" required="required">
+
+            <label for="pTanggalS">Tanggal Selesai</label>
+            <input type="date" id="pTanggalS" name="tanggal_selesai" required="required">
+
             <label for="pWmulai">Waktu Mulai</label>
-            <input type="time" id="pWmulai" name="pWmulai" placeholder="Waktu Mulai Peminjaman" required="required">
+            <input type="time" id="pWmulai" name="jam_mulai" placeholder="Waktu Mulai Peminjaman" required="required">
 
             <label for="pWSelesai">Waktu Selesai</label>
-            <input type="time" id="pWSelesai" name="pWSelesai" placeholder="Waktu Selesai Peminjaman" required="required">
+            <input type="time" id="pWSelesai" name="jam_selesai" placeholder="Waktu Selesai Peminjaman" required="required">
 
             <input type="submit" value="PINJAM">
     </form>
@@ -133,3 +132,5 @@ div.content{
 <div class="upperRow">
 <a href="<?php echo base_url();?>index.php/infotempat">List Tempat</a>
 </div>
+<script src="dynamicDropdown.js"></script>
+</body>

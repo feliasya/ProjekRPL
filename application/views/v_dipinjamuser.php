@@ -33,6 +33,35 @@ input[type=submit]:hover {
   font-size: 20px;
   color: white;
 }
+
+.table1 {
+  margin: 20px auto;
+  font-family: sans-serif; 
+  color: #444;
+  border-collapse: collapse;
+  width: 50%;
+  border : 1px solid #f2f5f7;
+}
+
+.table1 tr th{
+  background: #F0EBD8;
+  color: #fff;
+  font-weight: normal;
+}
+
+.table1, th, td{
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.table1 tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table1 tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
 </style>
 </head>
 
@@ -45,7 +74,41 @@ input[type=submit]:hover {
      </div>
 <div class="header">
         <h1>Tempat Sudah Dipinjam</h1>
-        <form name="Dipinjam" action="<?php echo base_url();?>index.php/pinjam/sudahdipinjam"></form>
+        <table class="table1">
+          <tr>
+            <th>No</th>
+            <th>Nama Peminjam</th>
+            <th>NPM</th>
+            <th>Fakultas</th>
+            <th>Instansi</th>
+            <th>Ruangan yang dipinjam</th>
+            <th>Acara</th>
+            <th>Mulai</th>
+            <th>Selesai</th>
+            <th>Dari Pukul</th>
+            <th>Hingga</th>
+          </tr>
+          <?php
+          $no = 1;
+          foreach ($user as $u){
+            ?>
+            <tr>
+              <td><?php echo $no++ ?></td>
+              <td><?php echo $u->peminjam ?></td>
+              <td><?php echo $u->npm ?></td>
+              <td><?php echo $u->fakultas ?></td>
+              <td><?php echo $u->instansi ?></td>
+              <td><?php echo $u->kode_ruang ?></td>
+              <td><?php echo $u->acara ?></td>
+              <td><?php echo $u->tanggal_mulai ?></td>
+              <td><?php echo $u->tanggal_selesai ?></td>
+              <td><?php echo $u->waktu_mulai ?></td>
+              <td><?php echo $u->waktu_selesai ?></td>
+              </td>
+            </tr>
+          <?php } ?>
+          </table>
+          
 </div>
 
 </body>
