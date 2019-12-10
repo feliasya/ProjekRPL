@@ -14,7 +14,7 @@
 }
 
 .upperRow{
-    padding: 50px;
+    padding: 10px;
 }
 
 .upperRow li{
@@ -63,21 +63,29 @@ div.content{
   margin-right: 30px;
   font-size: 18px;
 }
+.header {
+  background-color: #3E5C76;
+  padding: 10px;
+  font-family: roboto;
+  font-style: bold;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
 
 </style>
 </head>
 
 <body>
-
 <div class="upperRow">
-    <img src="\ProjekRPL\CheckIn.png" style="width: 50px; height: 50px; margin: 20px;" align="left">
+    <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 10px;" align="left">
     <a href="<?php echo base_url();?>index.php/login/logout">
-    <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px; margin: 20px;" align="right">
+    <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 10px;" align="right">
     </a>   
 </div>
-
-<a href="<?php echo base_url();?>index.php/infotempat">List Tempat</a>
-
+<div class="header">
+        <h1>Pinjam Tempat</h1>
+</div>
 <div class="content">
     <form name="peminjaman" action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">
 
@@ -121,4 +129,7 @@ div.content{
 
             <input type="submit" value="PINJAM">
     </form>
+</div>
+<div class="upperRow">
+<a href="<?php echo base_url();?>index.php/infotempat">List Tempat</a>
 </div>
