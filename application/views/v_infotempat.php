@@ -137,7 +137,11 @@ input[type=submit]:hover {
           <img src="\ProjekRPL\tempat.png">
         </li>
         <li>
-          <div class="blankSpace"></div>
+          <div class="blankSpace">
+            <h3>Nama : Gedung Rektorat</h3>
+            <h3>Jumlah auditorum : 1 (bale sawala)</h3>
+            <h3>Kapasitas : 1000 orang</h3>
+          </div>
         </li>
     </div>
 </body>

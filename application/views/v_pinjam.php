@@ -85,14 +85,20 @@ div.content{
     <img src="\ProjekRPL\logout-sign.png" style="width: 50px; height: 50px; margin: 20px;" align="right">
     </a>   
 </div>
+
+<a href="<?php echo base_url();?>index.php/infotempat">List Tempat</a>
+
 <div class="content">
     <form name="peminjaman" action="<?php echo base_url();?>index.php/pinjam/aksi_peminjaman" method="get">
+
+            <hr>
             <label for="pnama">Nama Peminjam</label>
             <input type="text" id="pnama" name="NamaPeminjam" placeholder="Nama Peminjam" required="required">
 
             <label for="pnpm">NPM</label>
             <input type="text" id="pnpm" name="NPMPeminjam" placeholder="NPM Peminjam" required="required">
 
+            <label for="pfakultas">Fakultas</label>
             <select name="Fakultas_Peminjam" onChange="SelectCat2();">
             <option value="">Pilih Fakultas</option>
             <option value="Fakultas Matematika dan Ilmu Pengetahuan Alam">FMIPA</option>
@@ -113,3 +119,5 @@ div.content{
 
             <label for="pAcara">Acara</label>
             <input type="text" id="pAcara" name="Acara" placeholder="Acara" required="required">
+    </form>
+</div>
