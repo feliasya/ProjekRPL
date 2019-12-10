@@ -100,6 +100,7 @@ div.content{
             <option value="Fakultas Kedokteran">FK</option>
             <option value="Fakultas Ilmu Budaya">FIB</option>
             </select>
+            <label for="pjurusan">Jurusan</label>
             <select name="Jurusan_Peminjam">
             <option value="">Pilih Jurusan</option>
 
@@ -111,5 +112,7 @@ div.content{
 
             <label for="pAcara">Acara</label>
             <input type="text" id="pAcara" name="Acara" placeholder="Acara" required="required">
+
+            <input type="submit" value="PINJAM">
     </form>
 </div>
