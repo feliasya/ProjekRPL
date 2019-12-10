@@ -1,20 +1,23 @@
 function SelectCat2(){
-    removeAllOptions(document.peminjaman.SubCat);
-    addOption(document.peminjaman.SubCat, "", "Pilih Jurusan", "");
-    if(document.peminjaman.Category.value == 'Desktop')
-    {   addOption(document.peminjaman.SubCat,"Acer", "Acer");
-        addOption(document.peminjaman.SubCat,"Dell", "Dell");
-        addOption(document.peminjaman.SubCat,"Lenovo", "Lenovo");
+    removeAllOptions(document.peminjaman.Jurusan_Peminjam);
+    addOption(document.peminjaman.Jurusan_Peminjam, "", "Pilih Jurusan", "");
+    if(document.peminjaman.Fakultas_Peminjam.value == 'Fakultas Matematika dan Ilmu Pengetahuan Alam')
+    {   addOption(document.peminjaman.Jurusan_Peminjam,"Matematika", "Matematika");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Fisika", "Fisika");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Kimia", "Kimia");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Biologi", "Biologi");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Statistika", "Statistika");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Teknik Informatika", "Teknik Informatika");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Teknik Elektro", "Teknik Elektro");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Geofisika", "Geofisika");
     }
-    if(document.peminjaman.Category.value == 'Laptop')
-    {   addOption(document.peminjaman.SubCat,"Asus", "Asus");
-        addOption(document.peminjaman.SubCat,"Acer", "Acer");
-        addOption(document.peminjaman.SubCat,"Sony Vaio", "Sony Vaio");
+    if(document.peminjaman.Fakultas_Peminjam.value == 'Fakultas Hukum')
+    {   addOption(document.peminjaman.Jurusan_Peminjam,"Hukum", "Hukum");
     }
-    if(document.peminjaman.Category.value == 'Smartphone')
-    {   addOption(document.peminjaman.SubCat,"Samsung", "Samsung");
-        addOption(document.peminjaman.SubCat,"LG", "LG");
-        addOption(document.peminjaman.SubCat,"Sony Xperia", "Sony Xperia");
+    if(document.peminjaman.Fakultas_Peminjam.value == 'Smartphone')
+    {   addOption(document.peminjaman.Jurusan_Peminjam,"Samsung", "Samsung");
+        addOption(document.peminjaman.Jurusan_Peminjam,"LG", "LG");
+        addOption(document.peminjaman.Jurusan_Peminjam,"Sony Xperia", "Sony Xperia");
     }
 }
 function removeAllOptions(selectbox)
