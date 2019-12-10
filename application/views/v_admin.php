@@ -94,15 +94,18 @@ input[type=ptempat] {
 }
 
 /* Left and right column */
-.column1.left {
-  width: 20%;
-  font-family: roboto;
-  font-size: 20px;
+.middleRow{
+  text-align : center;
+  margin: 0;
+  padding: 0;
 }
 
-.column1.right {
-  width: 50%;
+.middleRow li{
+  display: inline-block;
+  padding: 5%;
 }
+
+
 .header {
   background-color: #3E5C76;
   font-family: roboto;
@@ -124,39 +127,32 @@ img{
 	<div class="row">
 
 	  <div>
-        <a href="<?php echo base_url();?>index.php/login/logout">
         <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
      <div>
+        <a href="<?php echo base_url();?>index.php/login/logout"> 
         <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
+        </a>
      </div>
     <div class="header">
         <h1>Selamat Datang di Check-IN, <?php echo $this->session->userdata("nama"); ?>
     </div>
 	  
     <div style="padding-bottom: 53px" align="right">Help</div> 
-	</div>
+	  </div>
 
-	<div>
-	  
-	  <div class="column1 right">
-        <a href="<?php echo base_url();?>index.php/pinjam">
-	      <img src="\ProjekRPL\1.png">
+	  <div class = "middleRow">
+        <li>
+	        <img src="\ProjekRPL\1.png">
+        </li>
+        <li>
+          <div class="blankSpace"></div>
+        </li>
+        <li>
+          <a href="<?php echo base_url();?>index.php/pinjam">
+            <img src="\ProjekRPL\2.png">
+          </a>  
+        </li>
     </div>
-
-
-	  <div class="column1 right">
-
-        <img src="\ProjekRPL\2.png">
-    </div>
-
-	<div class="row1">
-	  <div class="column1 left">
-        <input type="tempat" value="LIST TEMPAT SUDAH DIPINJAM"></div>
-    <div class="column1 right">
-        <input type="ptempat" value="PINJAM TEMPAT" href="<?php echo base_url();?>index.php/pinjam">
-        <!--<a href="<?php echo base_url();?>index.php/pinjam">-->
-      </div>
-
 	</div>
 </body>
 </html>
