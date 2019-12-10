@@ -39,7 +39,7 @@ input[type=submit]:hover {
 <body>
         <img src="\ProjekRPL\CheckIn.png" style="width: 80px; height: 80px; margin: 20px;" align="left"> 
      <div>
-        <a href="<?php echo base_url();?>index.php/admin/logout"> 
+        <a href="<?php echo base_url();?>index.php/dipinjam/logout"> 
         <img src="\ProjekRPL\logout-sign.png" style="width: 80px; height: 80px; margin: 20px;" align="right">
         </a>
      </div>

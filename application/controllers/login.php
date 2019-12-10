@@ -22,12 +22,23 @@ class Login extends CI_Controller{
      		 redirect('login');
 		}else{
 			if($password == $user->password){
+				if($password=="admin"){
+				echo 'hu';
+				$data_session = array(
+				'nama' => $username,
+				'status_login' => true
+				);
+				$this->session->set_userdata($data_session);
+				redirect('dipinjam');
+				}
+				else{
 				$data_session = array(
 				'nama' => $username,
 				'status_login' => true
 				);
 				$this->session->set_userdata($data_session);
 				redirect('admin');
+				}	
 			}else{
 				$this->session->set_flashdata('message', 'Password salah');
         		redirect('login');
