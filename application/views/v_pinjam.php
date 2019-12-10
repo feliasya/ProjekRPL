@@ -108,17 +108,26 @@ div.content{
             <option value="Fakultas Kedokteran">FK</option>
             <option value="Fakultas Ilmu Budaya">FIB</option>
             </select>
+            <label for="pjurusan">Jurusan</label>
             <select name="Jurusan_Peminjam">
             <option value="">Pilih Jurusan</option>
 
             <label for="pInstansi">Instansi</label>
             <input type="text" id="pInstansi" name="Instansi_Peminjam" placeholder="Instansi" required="required">
 
-            <label for="pTempat">Ruangan yang akan dipinjam</label>
-            <input type="text" id="pTempat" name="Tempat_Pinjam" placeholder="Tempat" required="required">
+            <label for="pTempat">Kode Ruang</label>
+            <input type="text" id="pTempat" name="Tempat_Pinjam" placeholder="Kode Ruang Peminjaman" required="required">
 
             <label for="pAcara">Acara</label>
             <input type="text" id="pAcara" name="Acara" placeholder="Acara" required="required">
+
+            <label for="pWmulai">Waktu Mulai</label>
+            <input type="text" id="pWmulai" name="Acara" placeholder="Waktu Mulai Peminjaman" required="required">
+
+            <label for="pWSelesai">Waktu Selesai</label>
+            <input type="text" id="pWSelesai" name="Acara" placeholder="Waktu Selesai Peminjaman" required="required">
+
+            <input type="submit" value="PINJAM">
     </form>
 </div>
 <div class="upperRow">
